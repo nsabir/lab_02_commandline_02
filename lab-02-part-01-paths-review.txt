@@ -1,3 +1,4 @@
+2.1
 Lab - Paths and Review
 ==========
 Follow the instructions line-by-line.  
@@ -14,80 +15,85 @@ Feel free to use your workstation to test your answers to the questions that don
 1. Write the command that you would use to change to the root directory.
 ----------
 
-
+cd /
 
 ==========
 2. Write the command that you would use to change to your home directory.
 ----------
 
-
+cd ~
 
 ==========
 3. Write the command that you would use to change to your Desktop folder.
 ----------
 
-
+cd ~/desktop
 
 ==========
 4. What's the absolute path to your home directory?
 ----------
 
-
+/Users/admin
 
 ==========
 5. What's the absolute path to your Desktop directory?
 ----------
 
-
+/Users/admin/desktop
 
 ==========
 6. What's the absolute path to your Desktop directory?
 ----------
 
-
+/Users/admin/desktop
 
 ==========
 7. If you're in your home directory, what's the relative path to your Desktop directory?
 ----------
 
+/desktop
 
 ==========
 8. If you're in your home directory, how would you create a new directory on your desktop called stuff without changing your directory?  Write your command below.
 ----------
 
-
+ mkdir -p Desktop/stuff
 
 ==========
 9. If you're in your root directory, how would you create a new directory on your desktop called more-stuff without changing your directory?  Write your command below.
 ----------
 
-
+mkdir -p /Users/admin/Desktop/more-stuff
 
 ==========
 10. If you're in your Desktop directory, how would you create a new directory on your desktop called even-more-stuff?  Write your command below.
 ----------
 
-
+mkdir even-more-stuff
 
 ==========
 11. If you're in your home directory, how would you change to the directory right above it using a relative path (it should bring you to /Users)?  Write your command below.
 ----------
 
-
+cd ..
 
 ==========
 12. If you're in your Desktop directory, how would you change to two directories right above it (again, this should be /Users) using a relative path?  Write your command below.
 ----------
 
-
+cd ../..
 
 ==========
 13. What's the shortcut for changing to the directory that you were just previously in?  For example, if I were in /Volumes... and I changed to /Users/profesor/Desktop, what's a quick way of changing to /Volumes without writing something like cd /Volumes?
 ----------
 
+cd -
+
 ==========
 14. How would you show all of the files (including hidden ones) with detailed (long) information that are on you're Desktop if you're in your home directory?  Write your command below.
 ----------
+
+ ls -al Desktop
 
 ==========
 Optional Challenge:
@@ -99,4 +105,21 @@ d. Create another directory in my-stuff that's the same name as your computer.
 e. Determine which folder in my-stuff was created most recently by using ls.  (there are some flags that help with this).
 f. Remove that folder.
 g. Show all of the commands that you used to complete the above exercise.  (for example, how did you determine which folder in my-stuff was the most recent?).  Use the command: history ... to help you remember what you did!  Paste the commands below.
+
+
+a. mkdir my-stuff
+
+b. mkdir -p my-stuff/archived 
+   mkdir -p my-stuff/current  
+
+c. hostname 
+   Nafiss-MacBook-Pro.local
+
+d. mkdir -p my-stuff/Nafiss-MacBook-Pr
+
+e. ls -l
+   drwxr-xr-x  2 admin  staff  68 Sep 15 20:09 Nafiss-MacBook-Pro
+
+f. rmdir Nafiss-MacBook-Pro
+
 ----------
